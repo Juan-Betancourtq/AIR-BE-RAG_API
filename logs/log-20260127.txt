@@ -1,0 +1,96 @@
+2026-01-27 22:58:33.343 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-27 22:58:33.395 -05:00 [INF] Client connected: iaEmYIHh09v4W-nfeKrJVw
+2026-01-27 22:58:33.562 -05:00 [INF] Created new session: f6d2802b-516a-4239-8972-5500c5eb539a
+2026-01-27 23:00:07.930 -05:00 [INF] Client disconnected: iaEmYIHh09v4W-nfeKrJVw
+2026-01-27 23:00:08.007 -05:00 [INF] Created new session: c67fcf35-5403-49dd-a2d3-b32dfc009ed4
+2026-01-27 23:00:08.030 -05:00 [INF] Client connected: 7yLOa7BCPt1uR4-ENXMdHw
+2026-01-27 23:00:10.381 -05:00 [INF] Client disconnected: 7yLOa7BCPt1uR4-ENXMdHw
+2026-01-27 23:00:10.446 -05:00 [INF] Created new session: c36b5f32-1bf7-4515-83c0-f1b1cc26f2f8
+2026-01-27 23:00:10.472 -05:00 [INF] Client connected: B-3DaxD_q7QGE6_HjF6YQA
+2026-01-27 23:00:15.765 -05:00 [ERR] Error searching documents
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.Dictionary`2[System.String,System.Object]. Path: $.metadata | LineNumber: 0 | BytePositionInLine: 13194.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResult`1.DeserializeAsync(JsonElement element, ObjectSerializer serializer, JsonSerializerOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResults`1.DeserializeAsync(Stream json, ObjectSerializer serializer, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 50
+2026-01-27 23:00:15.833 -05:00 [ERR] Error processing RAG query
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.Dictionary`2[System.String,System.Object]. Path: $.metadata | LineNumber: 0 | BytePositionInLine: 13194.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResult`1.DeserializeAsync(JsonElement element, ObjectSerializer serializer, JsonSerializerOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResults`1.DeserializeAsync(Stream json, ObjectSerializer serializer, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 50
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-27 23:00:15.903 -05:00 [ERR] Error processing chat message
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.Dictionary`2[System.String,System.Object]. Path: $.metadata | LineNumber: 0 | BytePositionInLine: 13194.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResult`1.DeserializeAsync(JsonElement element, ObjectSerializer serializer, JsonSerializerOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.Models.SearchResults`1.DeserializeAsync(Stream json, ObjectSerializer serializer, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 50
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 52
+2026-01-27 23:04:23.322 -05:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5143: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-01-27 23:06:01.065 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-27 23:06:01.107 -05:00 [INF] Created new session: e37a9aec-19c0-4365-a29b-c1e3c86dbb3a
+2026-01-27 23:06:01.154 -05:00 [INF] Client connected: a6EOUdUHFgaW2T3lRd1BVA
+2026-01-27 23:07:14.807 -05:00 [INF] Client disconnected: a6EOUdUHFgaW2T3lRd1BVA
+2026-01-27 23:07:14.918 -05:00 [INF] Created new session: 4e9cdeaa-105f-45bc-b8f1-6045dd09c6f2
+2026-01-27 23:07:14.941 -05:00 [INF] Client connected: bvyGPEqvPHs2vghbd3BCNw
+2026-01-27 23:10:31.813 -05:00 [INF] Client disconnected: bvyGPEqvPHs2vghbd3BCNw
+2026-01-27 23:10:32.157 -05:00 [INF] Created new session: cc30cb3c-6c17-462a-858a-22385903eac1

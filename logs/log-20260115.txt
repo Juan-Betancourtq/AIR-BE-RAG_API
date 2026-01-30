@@ -1,0 +1,496 @@
+2026-01-15 17:43:40.309 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 17:43:40.376 -05:00 [INF] Client connected: ZDjvrKDrAGJG0ex-kSly1Q
+2026-01-15 17:43:40.478 -05:00 [INF] Created new session: 9b30ba0b-60d7-4e30-b8a3-c787152fb78a
+2026-01-15 17:44:00.966 -05:00 [ERR] Error searching documents
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+x-ms-client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+elapsed-time: 12
+Date: Thu, 15 Jan 2026 22:44:01 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+2026-01-15 17:44:00.992 -05:00 [ERR] Error processing RAG query
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+x-ms-client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+elapsed-time: 12
+Date: Thu, 15 Jan 2026 22:44:01 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-15 17:44:00.996 -05:00 [ERR] Error processing chat message
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+x-ms-client-request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+request-id: 662a7cfb-9f20-4564-9dab-ab8a9897fc2f
+elapsed-time: 12
+Date: Thu, 15 Jan 2026 22:44:01 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 17:46:35.684 -05:00 [INF] Client disconnected: ZDjvrKDrAGJG0ex-kSly1Q
+2026-01-15 17:46:35.758 -05:00 [INF] Created new session: ba76388c-8beb-4f74-8507-aac41bcda870
+2026-01-15 17:46:35.784 -05:00 [INF] Client connected: ZBmn-_PlMjMZG3WVnQrl6g
+2026-01-15 17:50:28.564 -05:00 [INF] Client disconnected: ZBmn-_PlMjMZG3WVnQrl6g
+2026-01-15 17:50:28.623 -05:00 [INF] Created new session: a3db7e6c-8d47-4d1b-94c9-6a0c81d9d993
+2026-01-15 17:50:28.633 -05:00 [INF] Client connected: iBpc-4kbgjGeNQCWGvszdQ
+2026-01-15 18:09:41.245 -05:00 [ERR] Error searching documents
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+x-ms-client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+elapsed-time: 6
+Date: Thu, 15 Jan 2026 23:09:42 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+2026-01-15 18:09:41.274 -05:00 [ERR] Error processing RAG query
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+x-ms-client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+elapsed-time: 6
+Date: Thu, 15 Jan 2026 23:09:42 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-15 18:09:41.286 -05:00 [ERR] Error processing chat message
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+x-ms-client-request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+request-id: 036776a9-035e-4a50-87ca-1b1eb4964cf1
+elapsed-time: 6
+Date: Thu, 15 Jan 2026 23:09:42 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 18:13:31.441 -05:00 [ERR] Error searching documents
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+x-ms-client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+elapsed-time: 11
+Date: Thu, 15 Jan 2026 23:13:32 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+2026-01-15 18:13:31.447 -05:00 [ERR] Error processing RAG query
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+x-ms-client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+elapsed-time: 11
+Date: Thu, 15 Jan 2026 23:13:32 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-15 18:13:31.450 -05:00 [ERR] Error processing chat message
+Azure.RequestFailedException: The index 'resume-documents' for service 'jupabequi' was not found.
+Status: 404 (Not Found)
+
+Content:
+{"error":{"code":"","message":"The index 'resume-documents' for service 'jupabequi' was not found."}}
+
+Headers:
+Strict-Transport-Security: REDACTED
+client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+x-ms-client-request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+request-id: e4a8e28b-2e75-4a6f-bb4f-6aeb0f67d658
+elapsed-time: 11
+Date: Thu, 15 Jan 2026 23:13:32 GMT
+Content-Length: 101
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 18:47:01.131 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 18:47:01.191 -05:00 [INF] Client connected: H00x8v6sXTkT5-swDycgDA
+2026-01-15 18:47:37.157 -05:00 [INF] Client connected: 1O712sj17E2FpQiBkbF9hg
+2026-01-15 18:47:37.203 -05:00 [INF] Created new session: 46a4ba10-7996-47c8-a926-32c3f186585e
+2026-01-15 18:47:44.901 -05:00 [ERR] Error searching documents
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'Id' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'Id' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+x-ms-client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+elapsed-time: 55
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:47:45 GMT
+Content-Length: 144
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+2026-01-15 18:47:44.936 -05:00 [ERR] Error processing RAG query
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'Id' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'Id' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+x-ms-client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+elapsed-time: 55
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:47:45 GMT
+Content-Length: 144
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-15 18:47:44.938 -05:00 [ERR] Error processing chat message
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'Id' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'Id' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+x-ms-client-request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+request-id: 1c618ef1-16ea-4065-a966-d64e6d6a155e
+elapsed-time: 55
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:47:45 GMT
+Content-Length: 144
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 18:51:29.770 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 18:51:29.819 -05:00 [INF] Client connected: w2N_KDmeb3gQaeuo9XcLpQ
+2026-01-15 18:51:31.303 -05:00 [INF] Client connected: L_iNW-9oCw9fEZXaobvZzQ
+2026-01-15 18:51:33.846 -05:00 [INF] Client disconnected: w2N_KDmeb3gQaeuo9XcLpQ
+2026-01-15 18:51:34.058 -05:00 [INF] Created new session: efc256e1-7c2c-4495-9855-d630951d7399
+2026-01-15 18:51:34.095 -05:00 [INF] Client connected: qiZRyIdkJA1ANwzyfFNcpA
+2026-01-15 18:51:41.051 -05:00 [INF] Created new session: e7fe9208-26a0-4e87-a8a9-2d73678655b7
+2026-01-15 18:51:41.112 -05:00 [INF] Client connected: KNM9zSGNmNTcmGRz1diV8g
+2026-01-15 18:51:55.001 -05:00 [ERR] Error searching documents
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'fileName' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'fileName' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+x-ms-client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+elapsed-time: 50
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:51:55 GMT
+Content-Length: 150
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+2026-01-15 18:51:55.016 -05:00 [ERR] Error processing RAG query
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'fileName' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'fileName' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+x-ms-client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+elapsed-time: 50
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:51:55 GMT
+Content-Length: 150
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+2026-01-15 18:51:55.019 -05:00 [ERR] Error processing chat message
+Azure.RequestFailedException: Invalid expression: Could not find a property named 'fileName' on type 'search.document'.
+Parameter name: $select
+Status: 400 (Bad Request)
+
+Content:
+{"error":{"code":"","message":"Invalid expression: Could not find a property named 'fileName' on type 'search.document'.\r\nParameter name: $select"}}
+
+Headers:
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+x-ms-client-request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+request-id: 3b1c2f28-7079-41f8-b54a-d6bbcbcd2fd6
+elapsed-time: 50
+Strict-Transport-Security: REDACTED
+Date: Thu, 15 Jan 2026 23:51:55 GMT
+Content-Length: 150
+Content-Type: application/json; charset=utf-8
+Content-Language: REDACTED
+Expires: -1
+
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](SearchOptions options, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchInternal[T](String searchText, SearchOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Search.Documents.SearchClient.SearchAsync[T](String searchText, SearchOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureSearchService.SearchAsync(String query, Int32 maxResults) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureSearchService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 38
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 20:22:28.232 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 20:22:28.289 -05:00 [INF] Client connected: 9qmjOriDwFm4XhgKCYBbww
+2026-01-15 20:22:28.305 -05:00 [INF] Created new session: bb587a12-c11a-415b-9b6a-59834f01cdec
+2026-01-15 20:22:43.297 -05:00 [INF] Client connected: wPi9Reghy6-fXVBoMPyBEw
+2026-01-15 20:22:43.299 -05:00 [INF] Client connected: 74_YnNKjIEuRDn9i0fymPQ
+2026-01-15 20:22:43.322 -05:00 [INF] Client connected: l3F9349lVfCZR2oWOi3N-w
+2026-01-15 20:23:31.169 -05:00 [ERR] Error getting completion from Azure OpenAI
+System.ClientModel.ClientResultException: HTTP 404 (DeploymentNotFound)
+
+The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.
+   at Azure.AI.OpenAI.ClientPipelineExtensions.ProcessMessageAsync(ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
+   at Azure.AI.OpenAI.Chat.AzureChatClient.CompleteChatAsync(BinaryContent content, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(IEnumerable`1 messages, ChatCompletionOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureOpenAIService.GetCompletionAsync(String prompt, List`1 context) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureOpenAIService.cs:line 53
+2026-01-15 20:23:31.196 -05:00 [ERR] Error processing RAG query
+System.ClientModel.ClientResultException: HTTP 404 (DeploymentNotFound)
+
+The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.
+   at Azure.AI.OpenAI.ClientPipelineExtensions.ProcessMessageAsync(ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
+   at Azure.AI.OpenAI.Chat.AzureChatClient.CompleteChatAsync(BinaryContent content, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(IEnumerable`1 messages, ChatCompletionOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureOpenAIService.GetCompletionAsync(String prompt, List`1 context) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureOpenAIService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 44
+2026-01-15 20:23:31.197 -05:00 [ERR] Error processing chat message
+System.ClientModel.ClientResultException: HTTP 404 (DeploymentNotFound)
+
+The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.
+   at Azure.AI.OpenAI.ClientPipelineExtensions.ProcessMessageAsync(ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
+   at Azure.AI.OpenAI.Chat.AzureChatClient.CompleteChatAsync(BinaryContent content, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(IEnumerable`1 messages, ChatCompletionOptions options, CancellationToken cancellationToken)
+   at ResumeChat.RagApi.Services.AzureOpenAIService.GetCompletionAsync(String prompt, List`1 context) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\AzureOpenAIService.cs:line 53
+   at ResumeChat.RagApi.Services.RagService.ProcessQueryAsync(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Services\RagService.cs:line 44
+   at ResumeChat.RagApi.Controllers.ChatController.SendMessage(ChatRequest request) in D:\Sources\Jupabequi\Resume\backend\ResumeChat.RagApi\Controllers\ChatController.cs:line 35
+2026-01-15 20:26:49.987 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 20:26:50.027 -05:00 [INF] Client connected: _E1zp1l_s-UOwHbPsJMdjg
+2026-01-15 20:26:50.306 -05:00 [INF] Client connected: LIitcaDbgrhg9O6ly9DQAg
+2026-01-15 20:26:51.308 -05:00 [INF] Client connected: _zMe85CCW2j6XljWLRw46g
+2026-01-15 20:26:51.313 -05:00 [INF] Client connected: K45oICFBITJSb9jlzXLzzA
+2026-01-15 20:26:53.953 -05:00 [INF] Client disconnected: _E1zp1l_s-UOwHbPsJMdjg
+2026-01-15 20:26:54.155 -05:00 [INF] Created new session: 38ad33d4-08f1-4da4-8128-bdc2fa755670
+2026-01-15 20:26:54.169 -05:00 [INF] Client connected: FqTNxcGI_KJ9eByMv5F56g
+2026-01-15 20:27:00.414 -05:00 [INF] Created new session: 833422d4-06d3-4a4a-bf63-25429ec50bfb
+2026-01-15 20:27:00.467 -05:00 [INF] Client connected: 8k-pWbh30TY5C6LDoN8EtA
+2026-01-15 20:33:17.960 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 20:33:17.999 -05:00 [INF] Client connected: XRXzvWePumY037-V9JXvqg
+2026-01-15 20:33:18.304 -05:00 [INF] Client connected: RPKz5ArcLf8AGmntHMZUZA
+2026-01-15 20:33:19.305 -05:00 [INF] Client connected: g5SDFokBLEbVOF1SPUGQoA
+2026-01-15 20:33:19.305 -05:00 [INF] Client connected: JPNiSEjrb9KJQVGg3smr8w
+2026-01-15 20:33:19.328 -05:00 [INF] Client connected: znBvHoJFjrtP1t8G5OKSzQ
+2026-01-15 20:33:22.899 -05:00 [INF] Client disconnected: XRXzvWePumY037-V9JXvqg
+2026-01-15 20:33:23.096 -05:00 [INF] Created new session: 73dfd5b5-b82e-4fc0-b804-d29cbeeb0998
+2026-01-15 20:33:23.111 -05:00 [INF] Client connected: ahxQTrtBLhfCiqoNDl7TnA
+2026-01-15 20:33:29.849 -05:00 [INF] Created new session: 3864adfa-4a22-45c6-b33c-5caf55aa0c59
+2026-01-15 20:33:29.923 -05:00 [INF] Client connected: 5zEv0QjKC8blubheGMGKOg
+2026-01-15 20:50:19.842 -05:00 [INF] Client disconnected: JPNiSEjrb9KJQVGg3smr8w
+2026-01-15 20:50:20.024 -05:00 [INF] Created new session: 62a17295-903d-4c18-b069-8235b987dd48
+2026-01-15 20:50:20.059 -05:00 [INF] Client connected: 37Y2P0nCIjwswiMKrrcGhg
+2026-01-15 20:57:44.032 -05:00 [INF] Client disconnected: 37Y2P0nCIjwswiMKrrcGhg
+2026-01-15 20:57:44.034 -05:00 [INF] Client disconnected: 5zEv0QjKC8blubheGMGKOg
+2026-01-15 20:57:44.076 -05:00 [INF] Client disconnected: ahxQTrtBLhfCiqoNDl7TnA
+2026-01-15 20:57:44.267 -05:00 [INF] Created new session: eaaa5e8d-3663-470e-8032-938309e2ed3e
+2026-01-15 20:57:44.330 -05:00 [INF] Created new session: 7ad046ba-a449-4aac-bf77-e7c8b8fb8007
+2026-01-15 20:57:44.355 -05:00 [INF] Client connected: WhGbG9hoPclYPJgPCzOqVQ
+2026-01-15 20:57:44.355 -05:00 [INF] Created new session: ebc04f93-4636-4430-993b-0c7d20e7c95c
+2026-01-15 20:57:44.479 -05:00 [INF] Client connected: h5CNAl4dn6VVeRRp-uODWw
+2026-01-15 20:57:44.493 -05:00 [INF] Client connected: 315xzdsUaQvgAKQD5KLaeA
+2026-01-15 21:12:39.894 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 21:12:39.998 -05:00 [INF] Created new session: 4c5e25b3-0bf9-4851-9786-2e2a71d964f7
+2026-01-15 21:12:39.998 -05:00 [INF] Created new session: 3fb660f1-9794-4789-bb65-9dbc84ccff75
+2026-01-15 21:12:40.005 -05:00 [INF] Client connected: 7YIfzXZof588r69IX_5xnw
+2026-01-15 21:12:40.021 -05:00 [INF] Client connected: QDTgnq-LefttaYcL9PlPMA
+2026-01-15 21:18:34.097 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-01-15 21:18:34.145 -05:00 [INF] Client connected: _EFNR_f8t7Jw3jb2I4_xAQ
+2026-01-15 21:18:34.296 -05:00 [INF] Client connected: -AqxxdxRHpj5p4I-KmZJpA
+2026-01-15 21:18:50.425 -05:00 [INF] Client connected: pCWhB76xgsNZT2FsKSDAXA
+2026-01-15 21:18:50.430 -05:00 [INF] Created new session: 9651255c-4f5a-4a8e-9c78-da60b21ffaaf
+2026-01-15 21:19:54.369 -05:00 [INF] Client disconnected: pCWhB76xgsNZT2FsKSDAXA
+2026-01-15 21:19:54.432 -05:00 [INF] Created new session: 15cf5d8f-dd37-4be5-b92c-4c9f45f3f9d4
+2026-01-15 21:19:54.462 -05:00 [INF] Client connected: 9pgy0lBLc9ZLjSOE2egxuA
+2026-01-15 21:21:51.909 -05:00 [INF] Client disconnected: 9pgy0lBLc9ZLjSOE2egxuA
+2026-01-15 21:21:52.136 -05:00 [INF] Created new session: 9a06be3b-27d1-4ec0-91c5-ebea8509c2f2
+2026-01-15 21:21:52.199 -05:00 [INF] Client connected: d1LC3Jqw3CozH3lCl8YOlA
+2026-01-15 21:39:30.238 -05:00 [INF] Client disconnected: _EFNR_f8t7Jw3jb2I4_xAQ
+2026-01-15 21:39:30.336 -05:00 [INF] Created new session: ce94f5f1-56ef-4780-95bb-04ffccab1ce6
+2026-01-15 21:39:30.379 -05:00 [INF] Client connected: _vuVpuIvQJfD8jNscOFZxA
+2026-01-15 21:39:30.512 -05:00 [INF] Client disconnected: _vuVpuIvQJfD8jNscOFZxA
+2026-01-15 21:39:30.661 -05:00 [INF] Created new session: f8cb23cf-c3bc-41c1-b91d-ba0260678ced
+2026-01-15 21:39:30.711 -05:00 [INF] Client connected: 39t7h7rK06gE-E8CjyRNWg
+2026-01-15 21:39:31.065 -05:00 [INF] Client disconnected: 39t7h7rK06gE-E8CjyRNWg
+2026-01-15 21:39:31.192 -05:00 [INF] Created new session: 62e92e1c-7c55-4451-9d01-ac61525981fa
+2026-01-15 21:39:31.244 -05:00 [INF] Client connected: PbJB6R6QvDeUZgZvPQK4rQ
+2026-01-15 21:39:31.497 -05:00 [INF] Client disconnected: PbJB6R6QvDeUZgZvPQK4rQ
+2026-01-15 21:39:31.627 -05:00 [INF] Created new session: 32deb229-35d2-45d7-a1f5-f07c92cc2c78
+2026-01-15 21:39:31.671 -05:00 [INF] Client connected: lS184KstQR2xXB2WhS1Y-w
+2026-01-15 21:39:31.912 -05:00 [INF] Client disconnected: lS184KstQR2xXB2WhS1Y-w
+2026-01-15 21:39:32.030 -05:00 [INF] Created new session: 14c21ee6-0583-40ea-91fd-2a58084b7e9a
+2026-01-15 21:39:32.078 -05:00 [INF] Client connected: au7R9vHCAcPIv9BWo6Kp6g
+2026-01-15 21:39:32.275 -05:00 [INF] Client disconnected: au7R9vHCAcPIv9BWo6Kp6g
+2026-01-15 21:39:34.105 -05:00 [INF] Client disconnected: -AqxxdxRHpj5p4I-KmZJpA
+2026-01-15 21:39:34.187 -05:00 [INF] Created new session: 13ce497f-a442-4a30-b444-98b9edb8683c
+2026-01-15 21:39:34.252 -05:00 [INF] Client connected: EX8sJO6MH1BrlIqEC1H2kw
+2026-01-15 21:39:34.644 -05:00 [INF] Client disconnected: EX8sJO6MH1BrlIqEC1H2kw
+2026-01-15 22:10:37.315 -05:00 [INF] Client disconnected: d1LC3Jqw3CozH3lCl8YOlA
+2026-01-15 22:10:50.338 -05:00 [INF] Created new session: 4f04fa89-1f38-4778-a24b-d4fe04f6e2ad
+2026-01-15 22:10:50.429 -05:00 [INF] Client connected: mTXf0z8AdjD8kewI2hgUOw
+2026-01-15 22:13:18.311 -05:00 [INF] Client disconnected: mTXf0z8AdjD8kewI2hgUOw
