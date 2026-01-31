@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ResumeChat.RagApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86d0f11027956dd0c8229a626ea70bfa51959290")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf5a906ec85cfab3a3e0275da44c958d5b3ef5a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ResumeChat.RagApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ResumeChat.RagApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

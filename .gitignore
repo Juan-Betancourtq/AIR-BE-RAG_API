@@ -6,4 +6,6 @@ obj/
 *.userosscache
 *.sln.docstates
 logs/
-appsettings.json
+appsettings.Development.json
+appsettings.Local.json
+.env
