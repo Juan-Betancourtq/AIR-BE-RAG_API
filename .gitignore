@@ -1,11 +1,43 @@
-bin/
-obj/
+## Build outputs
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+out/
+publish/
+
+## IDE caches
 .vs/
-*.user
+.vscode/
+.idea/
 *.suo
+*.user
+*.rsuser
 *.userosscache
 *.sln.docstates
+
+## NuGet
+packages/
+*.nupkg
+*.snupkg
+
+## Logs & diagnostics
 logs/
+*.log
+TestResults/
+BenchmarkDotNet.Artifacts/
+
+## Environment & secrets
+.env
 appsettings.Development.json
 appsettings.Local.json
-.env
+appsettings.*.local.json
+
+## Misc
+node_modules/
+wwwroot/dist/
+wwwroot/lib-manifest.json
+wwwroot/*.db
+wwwroot/*.sqlite
