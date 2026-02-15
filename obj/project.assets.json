@@ -4064,11 +4064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\ResumeChat.RagApi.csproj",
+      "projectUniqueName": "D:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\ResumeChat.RagApi.csproj",
       "projectName": "ResumeChat.RagApi",
-      "projectPath": "d:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\ResumeChat.RagApi.csproj",
+      "projectPath": "D:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\ResumeChat.RagApi.csproj",
       "packagesPath": "C:\\Users\\jupab\\.nuget\\packages\\",
-      "outputPath": "d:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\obj\\",
+      "outputPath": "D:\\Sources\\juan.betancourtq\\AIResume\\Backend\\AIR-BE-RAG_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
