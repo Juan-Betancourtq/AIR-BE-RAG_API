@@ -1,0 +1,36 @@
+name: Deploy Backend (SFTP)
+
+on:
+  push:
+    branches:
+      - DEV_Branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore ResumeChat.RagApi.csproj
+
+      - name: Publish API
+        run: dotnet publish ResumeChat.RagApi.csproj -c Release -o publish
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy via SFTP (lftp)
+        run: |
+          lftp -u "${{ secrets.SFTP_USER }}","${{ secrets.SFTP_PASSWORD }}" sftp://${{ secrets.SFTP_HOST }}:2222 <<EOF
+          set sftp:auto-confirm yes
+          mirror -R --delete --verbose publish/ /ResumeAI/backend/
+          bye
+          EOF
