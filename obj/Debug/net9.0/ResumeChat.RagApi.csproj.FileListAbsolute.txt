@@ -65,3 +65,14 @@ D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\obj\Debug\net9.0\Res
 D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\obj\Debug\net9.0\ResumeChat.RagApi.pdb
 D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\obj\Debug\net9.0\ResumeChat.RagApi.genruntimeconfig.cache
 D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\obj\Debug\net9.0\ref\ResumeChat.RagApi.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\Azure.Monitor.OpenTelemetry.AspNetCore.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\Azure.Monitor.OpenTelemetry.Exporter.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Api.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Extensions.Hosting.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Instrumentation.Http.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.Instrumentation.Runtime.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.PersistentStorage.Abstractions.dll
+D:\Sources\juan.betancourtq\AIResume\Backend\AIR-BE-RAG_API\bin\Debug\net9.0\OpenTelemetry.PersistentStorage.FileSystem.dll

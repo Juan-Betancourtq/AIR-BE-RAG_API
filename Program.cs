@@ -1,7 +1,15 @@
+using Azure.Monitor.OpenTelemetry.AspNetCore;
+using Microsoft.AspNetCore.Http;
+using OpenTelemetry.Instrumentation.Http;
+using OpenTelemetry.Instrumentation.Runtime;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using ResumeChat.RagApi.Configuration;
-using ResumeChat.RagApi.Services;
 using ResumeChat.RagApi.Hubs;
+using ResumeChat.RagApi.Services;
 using Serilog;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -69,6 +77,67 @@ builder.Services.AddSingleton<IAzureOpenAIService, AzureOpenAIService>();
 builder.Services.AddSingleton<IAzureSearchService, AzureSearchService>();
 builder.Services.AddScoped<IRagService, RagService>();
 builder.Services.AddSingleton<ISessionService, SessionService>();
+
+var openTelemetrySection = builder.Configuration.GetSection("OpenTelemetry");
+var serviceName = openTelemetrySection["ServiceName"] ?? builder.Environment.ApplicationName;
+var serviceVersion = openTelemetrySection["ServiceVersion"]
+    ?? typeof(Program).Assembly.GetName().Version?.ToString()
+    ?? "1.0.0";
+var azureMonitorConnectionString = openTelemetrySection.GetSection("AzureMonitor")["ConnectionString"];
+
+var openTelemetryBuilder = builder.Services.AddOpenTelemetry();
+
+openTelemetryBuilder.ConfigureResource(resource => resource
+    .AddService(serviceName: serviceName, serviceVersion: serviceVersion)
+    .AddAttributes(new KeyValuePair<string, object>[]
+    {
+        new("deployment.environment", builder.Environment.EnvironmentName),
+        new("service.instance.id", Environment.MachineName)
+    }));
+
+openTelemetryBuilder.WithMetrics(metrics =>
+{
+    metrics.AddAspNetCoreInstrumentation();
+    metrics.AddHttpClientInstrumentation();
+    metrics.AddRuntimeInstrumentation();
+});
+
+openTelemetryBuilder.WithTracing(tracing =>
+{
+    tracing.AddAspNetCoreInstrumentation(options =>
+    {
+        options.RecordException = true;
+        options.EnrichWithHttpRequest = (activity, request) =>
+        {
+            var clientIp = request.HttpContext.Connection.RemoteIpAddress?.ToString();
+            if (!string.IsNullOrWhiteSpace(clientIp))
+            {
+                activity.SetTag("http.client_ip", clientIp);
+            }
+
+            var referer = request.Headers.Referer.ToString();
+            if (!string.IsNullOrWhiteSpace(referer))
+            {
+                activity.SetTag("http.request_referer", referer);
+            }
+
+            var userAgent = request.Headers.UserAgent.ToString();
+            if (!string.IsNullOrWhiteSpace(userAgent))
+            {
+                activity.SetTag("http.user_agent", userAgent);
+            }
+        };
+    });
+    tracing.AddHttpClientInstrumentation();
+});
+
+if (!string.IsNullOrWhiteSpace(azureMonitorConnectionString))
+{
+    openTelemetryBuilder.UseAzureMonitor(options =>
+    {
+        options.ConnectionString = azureMonitorConnectionString;
+    });
+}
 
 var app = builder.Build();
 
