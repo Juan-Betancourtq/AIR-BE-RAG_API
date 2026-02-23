@@ -13,6 +13,44 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Tokenize appsettings
+        env:
+          AZUREOPENAI__ENDPOINT: ${{ secrets.AZUREOPENAI__ENDPOINT }}
+          AZUREOPENAI__APIKEY: ${{ secrets.AZUREOPENAI__APIKEY }}
+          AZUREOPENAI__DEPLOYMENTNAME: ${{ secrets.AZUREOPENAI__DEPLOYMENTNAME }}
+          AZUREOPENAI__APIVERSION: ${{ secrets.AZUREOPENAI__APIVERSION }}
+          AZURESEARCH__ENDPOINT: ${{ secrets.AZURESEARCH__ENDPOINT }}
+          AZURESEARCH__APIKEY: ${{ secrets.AZURESEARCH__APIKEY }}
+          AZURESEARCH__INDEXNAME: ${{ secrets.AZURESEARCH__INDEXNAME }}
+          APPLICATIONINSIGHTS__CONNECTIONSTRING: ${{ secrets.APPLICATIONINSIGHTS__CONNECTIONSTRING }}
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const templatePath = 'appsettings.template.json';
+          let content = fs.readFileSync(templatePath, 'utf8');
+          const keys = [
+            'AZUREOPENAI__ENDPOINT',
+            'AZUREOPENAI__APIKEY',
+            'AZUREOPENAI__DEPLOYMENTNAME',
+            'AZUREOPENAI__APIVERSION',
+            'AZURESEARCH__ENDPOINT',
+            'AZURESEARCH__APIKEY',
+            'AZURESEARCH__INDEXNAME',
+            'APPLICATIONINSIGHTS__CONNECTIONSTRING',
+          ];
+
+          for (const key of keys) {
+            const value = process.env[key];
+            if (!value) {
+              throw new Error(`Missing environment value for ${key}`);
+            }
+            const pattern = new RegExp(`\\{${key}\\}`, 'g');
+            content = content.replace(pattern, value);
+          }
+
+          fs.writeFileSync('appsettings.json', content, 'utf8');
+          NODE
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:

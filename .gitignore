@@ -42,3 +42,4 @@ wwwroot/dist/
 wwwroot/lib-manifest.json
 wwwroot/*.db
 wwwroot/*.sqlite
+appsettings.json
