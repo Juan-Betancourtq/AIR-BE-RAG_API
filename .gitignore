@@ -43,3 +43,4 @@ wwwroot/lib-manifest.json
 wwwroot/*.db
 wwwroot/*.sqlite
 appsettings.json
+bin/Debug/
